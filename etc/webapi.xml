@@ -1,0 +1,15 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/lof-sync-orders/" method="POST">
+        <service class="Lof\PosSync\Api\SyncOrderManagementInterface" method="saveSyncOrder"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+    <route url="/V1/lof-sync-orders-message-queue/" method="POST">
+        <service class="Lof\PosSync\Api\PublishMessageManagementInterface" method="setMessage"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+</routes>

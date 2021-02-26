@@ -1,0 +1,4 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Lof\PosSync\Api\SyncOrderManagementInterface" type="Lof\PosSync\Model\SyncOrderManagement" />
+    <preference for="Lof\PosSync\Api\PublishMessageManagementInterface" type="Lof\PosSync\Model\PublishMessageManagement" />
+</config>
